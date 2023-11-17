@@ -6,11 +6,11 @@
 /*   By: acroue <acroue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 11:40:14 by acroue            #+#    #+#             */
-/*   Updated: 2023/11/15 18:55:11 by acroue           ###   ########.fr       */
+/*   Updated: 2023/11/16 14:59:11 by acroue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putchar(char c)
 {

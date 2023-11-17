@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroue <acroue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 18:07:32 by acroue            #+#    #+#             */
-/*   Updated: 2023/11/15 18:56:00 by acroue           ###   ########.fr       */
+/*   Updated: 2023/11/17 10:55:48 by acroue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdlib.h>
 # include <stdarg.h>
@@ -26,7 +26,7 @@ int		ft_put_unsigned(unsigned int n);
 int		ft_hex_min(long long arg);
 int		ft_hex_zero(long long arg, char c);
 int		ft_put_hex(char *str, int len, int is_address);
-int		ft_putnbr_base(long long n, char *base, int is_address);
+int		ft_putnbr_base(unsigned long long n, char *base, int is_address);
 int		ft_putchar(char c);
 int		ft_putstr(char *s);
 int		ft_strlen(char *s);
