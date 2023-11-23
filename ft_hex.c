@@ -6,7 +6,7 @@
 /*   By: acroue <acroue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 18:52:38 by acroue            #+#    #+#             */
-/*   Updated: 2023/11/17 11:04:30 by acroue           ###   ########.fr       */
+/*   Updated: 2023/11/23 18:38:56 by acroue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,9 @@ int	ft_hex_min(long long arg)
 {
 	if (!arg)
 		return (write(1, "(nil)", 5));
-	// if (arg == 2147483648)
-	// {
-	// 	return (write(1, "0xffffffff", 10));
-	// }
 	else
-	return (ft_putnbr_base(arg, "0123456789abcdef", 2));
+		return (ft_putnbr_base(arg, "0123456789abcdef", 2));
 }
-
-#include <stdio.h>
 
 int	ft_hex_zero(long long arg, char c)
 {

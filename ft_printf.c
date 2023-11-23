@@ -6,7 +6,7 @@
 /*   By: acroue <acroue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 18:14:53 by acroue            #+#    #+#             */
-/*   Updated: 2023/11/17 11:01:41 by acroue           ###   ########.fr       */
+/*   Updated: 2023/11/23 18:38:12 by acroue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ int	ft_flag_manage(char c, va_list arg)
 	else if (c == 'u')
 		return (ft_put_unsigned(va_arg(arg, unsigned int)));
 	else if (c == 'x' || c == 'X')
-		return (ft_hex_zero(va_arg(arg,unsigned int), c));
+		return (ft_hex_zero(va_arg(arg, unsigned int), c));
 	else if (c == 'p')
-		return (ft_hex_min(va_arg(arg,unsigned long)));
+		return (ft_hex_min(va_arg(arg, unsigned long)));
 	else
 		return (write(1, "you are not supposed to see this", 32));
 }
